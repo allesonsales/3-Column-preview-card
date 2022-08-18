@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    display: none;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 60vh;
+    min-height: 400px;
+    width: 25vw;
+    min-width: 250px;
+    padding: 2rem;
+}
+
+.card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 2px;
+}
+
+.card span {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height: 150%;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 60%;
+}
+
+.card button {
+    border: none;
+    background-color: white;
+    padding: 10px 18px;
+    border-radius: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: solid 2px white;
+    padding: 8px 16px;
+}
+
+.card:nth-child(1) button {
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(1) button:hover {
+    color: white;
+}
+
+.card:nth-child(2) button:hover {
+    color: white;
+}
+
+.card:nth-child(3) button:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 610px), (orientation: portrait) {
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 40vw;
+    }
+
+    .card:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .card:nth-child(2) {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .card:nth-child(3) {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+}
